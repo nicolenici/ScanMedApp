@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ScanMedApp</string>
+    <string name="hej">Hej!</string>
+    <string name="moje_konto">Moje konto</string>
 </resources>

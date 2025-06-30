@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvAccountTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moje konto"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tvCurrentUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zalogowany jako: użytkownik"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/etNewUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:hint="Nowy login"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:hint="Nowe hasło"
+        android:inputType="textPassword"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:paddingVertical="12dp"
+        android:text="Zapisz"/>
+</LinearLayout>

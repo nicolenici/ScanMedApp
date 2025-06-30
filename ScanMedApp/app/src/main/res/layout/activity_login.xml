@@ -1,38 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="24dp">
+    android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/etUsername"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="Nazwa użytkownika"
-        android:padding="12dp" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
 
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:hint="Hasło"
-        android:inputType="textPassword"
-        android:padding="12dp" />
+        <Button
+            android:id="@+id/btnShowLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zaloguj się"
+            android:minHeight="48dp"
+            android:paddingVertical="12dp"
+            android:layout_marginBottom="12dp" />
 
-    <Button
-        android:id="@+id/btnRegister"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginTop="24dp"
-        android:text="Zarejestruj" />
+        <Button
+            android:id="@+id/btnShowRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zarejestruj się"
+            android:minHeight="48dp"
+            android:paddingVertical="12dp"
+            android:layout_marginBottom="24dp" />
 
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:text="Zaloguj" />
 
-</LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutLoginForm"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etLoginUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Login"
+                android:minHeight="48dp"
+                android:paddingVertical="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/etLoginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hasło"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:paddingVertical="12dp"
+                android:layout_marginBottom="24dp"/>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zaloguj się"
+                android:minHeight="48dp"
+                android:paddingVertical="12dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutRegisterForm"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etRegisterUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nowy login"
+                android:minHeight="48dp"
+                android:paddingVertical="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/etRegisterPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nowe hasło"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:paddingVertical="12dp"
+                android:layout_marginBottom="24dp"/>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zarejestruj się"
+                android:minHeight="48dp"
+                android:paddingVertical="12dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
